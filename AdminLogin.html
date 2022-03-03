@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="icon/favicon.ico">
+
+  <style>
+    body {
+
+      background-color: #EAF6F6;
+      background-image: url("img/hospital-management-system.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .card {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      /*border:1px solid blue;*/
+      overflow: hidden;
+    }
+
+    .card>div {
+      height: 100%;
+      width: 100%;
+    }
+
+    .card .foreground {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateX(100%);
+      background: url("img/Health-Care-admin.jpg") no-repeat;
+      transition: .5s ease;
+    }
+
+    .card:hover .foreground {
+      transform: translateX(0);
+    }
+
+    .float-container {
+      padding: 20px;
+    }
+
+    .float-child {
+      width: 50%;
+      float: left;
+      padding: 20px;
+    }
+
+    label {
+      color: dodgerblue;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    #resetPasswordSection {
+      display: none;
+    }
+
+    #resetPasswordSection {
+      /*background: green;*/
+      color: white;
+      padding: 5em;
+    }
+
+    #resetPasswordSection:target {
+      display: block;
+      border-width: medium;
+      border-radius: 10px;
+      border: red;
+      padding: 0;
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Admin Login</h1>
+  <div class="float-container">
+    <div class="float-child">
+      <form action="PatientsRecord.html">
+        <table>
+          <tr>
+            <th>
+              <h2 style="color:#144c4c">Emblem</h2>
+            </th>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label>Username</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="text" name="username" value="" placeholder="username" required>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label>Password</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="text" name="password" value="" placeholder="password" required>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="submit" name="submit" value="Login" class="SubmitButton">
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:left;  display: inline-block;padding: 1em; ">
+              <a href="#resetPasswordSection" style="float:left;color:dodgerblue;font-weight:bold;">Forgot Password ?</a>
+            </td>
+            <td style="text-align:right;">
+              <a href="RegisterUser.html" style="float:right;color:dodgerblue;font-weight:bold;">Register</a>
+            </td>
+            <td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align:center;">
+              <a href="GuestUserLogin.html" style="float:center; color:dodgerblue;font-weight:bold;">Guest User</a>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <div class="card float-child">
+      <div class="foreground">
+        <h2>Welcome to the Ghana Health Record, Please login in to access patient information.</h2>
+      </div>
+      <div class="background">
+      </div>
+    </div>
+    <div class="textContainer float-child">
+      <div id="resetPasswordSection">
+        <form action="mailto:ItAdmin@Hospital.com" method="post" enctype="text/plain">
+          <table style="width:100%">
+            <tr>
+              <th>
+                <label style="width: 100%;color: black;">
+                Please enter your email below, we will send information to reset your password.
+              </label>
+            </th>
+            </tr>
+            <tr>
+              <td>
+                <input type="email" name="EmailAddress" value="" placeholder="Email Address" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" name="Reset Password" value="Reset Password" class="SubmitButton" style="color:red;">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

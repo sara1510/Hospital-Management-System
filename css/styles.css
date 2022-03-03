@@ -1,0 +1,145 @@
+a :hover {
+  transform: scale(0.5);
+  background: black;
+}
+figcaption {
+  color: #6aaede;
+  margin: auto;
+  background-color: white;
+  text-align:center;
+}
+hr {
+  border-style: dotted none none none;
+  border-color: grey;
+  border-width: 5px;
+  width: 5%;
+}
+
+h1 {
+  color: #144c4c;
+  text-align: center;
+}
+
+h2 {
+  color: #144c4c;
+  text-align: center;
+}
+
+h3 {
+  color: #66BFBF;
+  text-align: center;
+}
+h4 {
+  color: #66BFBF;
+  text-align: center;
+}
+.SubmitButton:hover {
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.SubmitButton{
+margin:auto;display:block; color:#144c4c; border-radius:8px; font-family: "Lucida Grande", Geneva, Verdana, Arial, Helvetica, sans-serif;
+}
+table{
+  border: azure;
+      border-style: groove;
+      /* align-content: center; */
+      margin: auto;
+
+}
+textarea{ width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+
+.formclass{
+  text-align: center;
+/*  width: 50%;
+  height: auto;*/
+  float:left;
+  border-style: ridge;
+  /*border-style: groove;
+  border: azure;*/
+}
+
+.column{
+  float: left;
+  width: min-content;
+}
+.row{
+  content: "";
+  display: table;
+  clear:both;
+  width: auto;
+  margin: auto;
+}
+.welcomeform{
+  width: 50%;
+}
+
+label {
+color: #2b343c;
+font-weight: bold;
+display: block;
+width: 150px;
+float: left;
+}
+label:after { content: ": " }
+
+
+
+
+
+
+
+
+
+.PatientInformation {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.PatientInformation td, .PatientInformation th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.PatientInformation tr:nth-child(even){background-color: #f2f2f2;}
+
+.PatientInformation tr:hover {background-color: #ddd;}
+
+.PatientInformation th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:darkgrey;
+  color: white;
+}
+
+
+.PatientRecord {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+.PatientRecord td, .PatientRecord th {
+  border: 1px solid #ddd;
+  padding: 8px;
+
+}
+
+.PatientRecord tr:nth-child(even){background-color: #f2f2f2;}
+
+.PatientRecord tr:hover {background-color: #ddd;}
+
+.PatientRecord th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:#66BFBF;
+  color: white;
+}

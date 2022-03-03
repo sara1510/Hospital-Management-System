@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Guest User Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="icon/favicon.ico">
+  <style media="screen">
+    body {
+      background-color: #EAF6F6;
+      background-image: url("img/Health-Care-guestUser.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <form class="" action="mailto:" info@Hospital.com" method="post" enctype="text/plain">
+    <h2>Login - Guest User</h2>
+    <table>
+      <tr>
+        <td><label>Name</label></td>
+        <td><input type="text" name="username" value="" placeholder="username" required></td>
+      </tr>
+      <tr>
+        <td><label>GH card / NHIS Number</label> </td>
+        <td><input type="text" name="NHIS nb." value="" placeholder="NHIS nb." required></td>
+      </tr>
+      <tr>
+        <td><label>Request :</label></td>
+      </tr>
+      <tr>
+        <td>
+          <label><input type="radio" name="request" value="Medical Record" required>Medical Record</label>
+        </td>
+        <td>
+          <label><input type="radio" name="request" value="Hospital Report" required>Hospital Report</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label>Purpose :</label></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea name="request purpose" rows="10" cols="25" placeholder="Kindly explain the purpose of your request."></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" name="Submit" value="Submit" class="SubmitButton">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+
+</html>
